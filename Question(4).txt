@@ -1,0 +1,42 @@
+What is  Method Overloading?
+ 
+Method overloading allows programmers to use multiple methods with the same name. The methods are differentiated with their number and type of method arguments. Method overloading is an example of the polymorphism feature of an object oriented programming language.
+
+ public class Methodoveloading    
+  {    
+    public int add(int a, int b)  
+    {    
+        return a + b;    
+        
+    }    
+    public int add(int a, int b,int c)   
+    {    
+        return a + b+c;    
+    
+    }    
+    public float add(float a, float b,float c,float d)  
+    {    
+        return a + b+c+d;    
+    
+    }    
+  }   
+
+What is Method overriding?
+ 
+Method overriding in C# allows programmers to create base classes that allows its inherited classes to override same name methods when implementing in their class for different purpose. This method is also used to enforce some must implement features in derived classes.
+
+public class Account
+  {  
+    public virtual int balance()  
+    {  
+        return 10;  
+    }  
+  }  
+public class Amount:Account
+{  
+     
+    public override int balance()  
+    {  
+        return 500;  
+    }  
+} 
